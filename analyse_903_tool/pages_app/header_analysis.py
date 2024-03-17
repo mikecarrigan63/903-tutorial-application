@@ -1,29 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>stlite app</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.css"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.js"></script>
-    <script>
-stlite.mount(
-  {
-    requirements: ["plotly"], // Packages to install
-    entrypoint: "ern_app.py", // The target file of the `streamlit run` command
-    files: {
-        "ern_app.py": `
-
 # Order of coding
 # 1. importing modules
 # 2. classes (if using)
@@ -123,11 +97,4 @@ if upload:
 
     st.dataframe(df)
 
-`,
-    },
-  },
-  document.getElementById("root")
-);
-    </script>
-  </body>
-</html>
+    
